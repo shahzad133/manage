@@ -1,0 +1,45 @@
+.main-content {
+
+    padding: 5% 8%;
+
+    h2 {
+        margin-bottom: 7%;
+    }
+    .main-content-heading {
+        //padding-left: 0;
+
+        p {
+        padding-right: 40%;
+        line-height: 1.5;
+        }
+    }
+
+  
+    ol {
+        padding-left: 15%;
+        list-style-type: none;
+        counter-reset: orderedlist;
+        li {
+            position: relative;
+            padding-right: 12%;
+            margin-bottom: 10%;
+        }
+
+        li::before {
+            position: absolute;
+            text-align: right;
+            left: -80px;
+            //bottom: -10px;
+            counter-increment: orderedlist;
+            content: "0" counter(orderedlist);
+            background-color: $BrightRed;
+            color: $VaryLightGray;
+            padding: 6px 18px;
+            border-radius: 16px;
+            font-weight: 500;
+        }
+    }
+
+
+      
+}

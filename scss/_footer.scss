@@ -1,0 +1,65 @@
+.footer {
+    .footer-orange {
+        background-color: $BrightRed;
+        padding: 3% 8%;
+
+        .footer-orange-text {
+            padding-right: 5%;
+        }
+
+        .footer-orange-button {
+            text-align: right;
+            padding-top: 30px;
+        }
+    }
+
+    .footer-blue {
+        padding: 4% 8%;
+        background-color: $VeryDarkBlue;
+
+        .footer-blue-media {
+            padding-top: 30%;
+        }
+
+        .footer-blue-icons {
+            color: $VaryLightGray;
+            &:not(:first-child) {
+                margin-left: 4%;
+            }
+            &:hover {
+                cursor: pointer;
+                color: $BrightRed;
+                transition: color 300ms ease-in-out;
+            }
+        }
+
+        ul {
+            padding-left: 0;
+        
+            li {
+                list-style: none;
+                &:not(:last-child){
+                    margin-bottom: 6%;
+                }
+
+                a{  
+                    font-size: 0.8rem;
+                    color: $VaryLightGray;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: $BrightRed;
+                        transition: color 300ms ease-in-out;
+                    }
+                }
+            }
+        }
+
+        .copy-right {
+            padding-top: 15%;
+        }
+
+
+    }
+}
